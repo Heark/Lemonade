@@ -1,3 +1,8 @@
+// Change 
+$PORT = "5080";
+$IP = "127.0.0.1"; // Not necessarily needed
+// End of changes
+
 var http = require("http");
 var path = require("path");
 var async = require("async");
@@ -61,7 +66,7 @@ function broadcast(message, data) {
     socket.emit(message, data);
   });
 }
-server.listen(process.env.PORT || 3E3, process.env.IP || "0.0.0.0", function() {
+server.listen($PORT || 3E3, $IP || "0.0.0.0", function() {
   var addr = server.address();
   console.log("Chat server listening at", addr.address + ":" + addr.port);
 });
