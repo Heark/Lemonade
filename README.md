@@ -4,7 +4,7 @@ Play now! http://lemon-ade.herokuapp.com/
 ## Getting Started
 
 1. Download all files
-2. Edit Port settings in `server.js`, set port to your port 
+2. Edit Port settings in `server.js`, set `$PORT` to your port, and set `$IP` to your ip  
 3. Open terminal (command prompt)
 
 Once you're in the terminal access the folder in which `server.js` is in the main directory
