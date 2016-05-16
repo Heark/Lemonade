@@ -1,7 +1,7 @@
 {
   "name": "lemon-ade",
-  "version": "0.0.0",
-  "description": "A simple lemonade game.",
+  "version": "0.1.0",
+  "description": "A simple lemonade game",
   "main": "server.js",
   "repository": "",
   "author": "Heark <hearkofsorcery@gmail.com>",
