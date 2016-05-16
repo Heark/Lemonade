@@ -56,7 +56,7 @@ $(document).ready(function() {
             if (Grandma.clicked == false) {
               if (lemon_money >= Grandma.price) {
                 lemon_money -= Grandma.price;
-                $("#lemonmoney").html("$" + lemon_money.commaFiter());
+                $("#lemonmoney").html("$" + lemon_money.toString());
                 lemon_growth += Grandma.effect;
                 /** @type {boolean} */
                 Grandma.clicked = true;
@@ -91,7 +91,7 @@ $(document).ready(function() {
             if (Orange.clicked == false) {
               if (lemon_money >= Orange.price) {
                 lemon_money -= Orange.price;
-                $("#lemonmoney").html("$" + lemon_money.commaFilter());
+                $("#lemonmoney").html("$" + lemon_money.toString());
                 lemon_growth += Orange.effect;
                 /** @type {boolean} */
                 Orange.clicked = true;
