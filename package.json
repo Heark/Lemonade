@@ -4,7 +4,7 @@
   "description": "A simple lemonade game",
   "main": "server.js",
   "repository": "",
-  "author": "Heark <hearkofsorcery@gmail.com>",
+  "author": "Heark <hearkofsorcerey@gmail.com>",
   "dependencies": {
     "async": "~0.2.8",
     "express": "~3.2.4",
