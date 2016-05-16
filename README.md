@@ -1,5 +1,5 @@
 
-
+[![Build Status](https://travis-ci.org/Heark/Lemonade.svg?branch=master)](https://travis-ci.org/Heark/Lemonade)
 
 ## Getting Started
 
