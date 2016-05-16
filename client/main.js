@@ -1,7 +1,7 @@
 /**
  * @return {?}
  */
-Object.prototype.commaFilter = function() {
+var commaFilter = function() {
   return this.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 };
 /** @type {number} */
@@ -108,6 +108,6 @@ $(document).ready(function() {
   });
   $("#lemon").click(function() {
     lemon_money += lemon_growth;
-    $("#lemonmoney").html("$" + lemon_money.commaFilter());
+    $("#lemonmoney").html("$" + commaFilter(lemon_money));
   });
 });
