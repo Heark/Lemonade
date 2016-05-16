@@ -1,6 +1,6 @@
 // Change 
-$PORT = "5080";
-$IP = "127.0.0.1"; // Not necessarily needed
+$PORT = process.env.PORT;
+$IP = process.env.IP; // Not necessarily needed
 // End of changes
 
 var http = require("http");
