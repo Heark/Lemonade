@@ -108,6 +108,6 @@ $(document).ready(function() {
   });
   $("#lemon").click(function() {
     lemon_money += lemon_growth;
-    $("#lemonmoney").html("$" + commaFilter(lemon_money));
+    $("#lemonmoney").html("$" + commaFilter(lemon_money).toString());
   });
 });
