@@ -1,7 +1,7 @@
 /**
  * @return {?}
  */
-var commaFilter = function() {
+Object.prototype.commaFilter = function() {
   return this.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 };
 /** @type {number} */
@@ -56,7 +56,7 @@ $(document).ready(function() {
             if (Grandma.clicked == false) {
               if (lemon_money >= Grandma.price) {
                 lemon_money -= Grandma.price;
-                $("#lemonmoney").html("$" + lemon_money.toString());
+                $("#lemonmoney").html("$" + lemon_money.commaFilter());
                 lemon_growth += Grandma.effect;
                 /** @type {boolean} */
                 Grandma.clicked = true;
@@ -91,7 +91,7 @@ $(document).ready(function() {
             if (Orange.clicked == false) {
               if (lemon_money >= Orange.price) {
                 lemon_money -= Orange.price;
-                $("#lemonmoney").html("$" + lemon_money.toString());
+                $("#lemonmoney").html("$" + lemon_money.commaFilter());
                 lemon_growth += Orange.effect;
                 /** @type {boolean} */
                 Orange.clicked = true;
@@ -108,6 +108,6 @@ $(document).ready(function() {
   });
   $("#lemon").click(function() {
     lemon_money += lemon_growth;
-    $("#lemonmoney").html("$" + commaFilter(lemon_money).toString());
+    $("#lemonmoney").html("$" + lemon_money.commaFilter());
   });
 });
