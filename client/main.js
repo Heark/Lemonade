@@ -11,7 +11,7 @@ var upgrade = function(tmplName, desc, price, effect) {
 function float(num) {
   this.num = num;
   num = num.toString();
-  parseFloat(num);
+  return parseFloat(num);
 }
 var Grandma = new upgrade("Grandma's Recipe", "", 100, 5);
 var Orange = new upgrade("Orange Juice", "", 350, 8);
